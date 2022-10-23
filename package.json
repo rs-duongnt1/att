@@ -1,0 +1,26 @@
+{
+  "name": "express-example",
+  "license": "ISC",
+  "bin": "index.js",
+  "scripts": {
+    "start:server": "nodemon socket-server.js"
+  },
+  "dependencies": {
+    "express": "4.15.2",
+    "express-handlebars": "^6.0.6",
+    "handlebars": "^4.7.7",
+    "nodemon": "^2.0.20",
+    "puppeteer": "^19.1.0",
+    "puppeteer-core": "^19.1.0",
+    "socket.io": "^4.5.3",
+    "socket.io-client": "^4.5.3"
+  },
+  "pkg": {
+    "assets": [
+      "views/**/*"
+    ],
+    "targets": [
+      "node14"
+    ]
+  }
+}

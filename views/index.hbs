@@ -1,0 +1,26 @@
+<div>
+  <button class="btn btn-primary" onclick="run()">RUN</button>
+  <button class="btn btn-primary"><i class="bi bi-plus-square"></i></button>
+</div>
+<div>
+  <div class="alert alert-success">
+  Navigate to <a href="https://google.com">https://google.com</a>
+</div>
+<div class="alert alert-danger">
+  Navigate to <a href="https://google.com">https://google.com</a>
+</div>
+<div class="alert alert-info">
+ <span>Wait <input value="3" /> seconds</span>
+</div>
+<div class="alert alert-info">
+ <span>Type text "abcdef@gmail.com" into input #email</span>
+</div>
+
+</div>
+<script>
+  function run() {
+    axios.get('/run').then(res => {
+      console.log(res);
+    })
+  }
+</script>
